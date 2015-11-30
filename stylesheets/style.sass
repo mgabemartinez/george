@@ -9,7 +9,7 @@ html
 body
   font-family: $h1
   font-weight: 400
-  height: 100%
+  min-height: 100%
   letter-spacing: .1em
 
   h1
@@ -117,12 +117,15 @@ body
     min-height: 50vh
     position: relative
     display: flex
+    flex-direction: column
     justify-content: center
     align-items: center
+    margin-top: 60px
+    margin-bottom: 60px
 
     .body-text
       max-width: 500px
-      margin: 30px
+      margin: 40px
 
     button
       background-color: $offwhite
@@ -172,8 +175,6 @@ footer
   .contact
     margin-left: 200px
 
-
-
 .copyright
   font-family: $h2
   font-size: .8em
@@ -182,6 +183,46 @@ footer
   display: flex
   justify-content: center
   align-items: center
+
+.telly-text
+  width: 800px
+  margin-bottom: 100px
+
+.britain
+  margin-bottom: 40px
+
+.telly-schedule
+  width: 700px
+  font-family: $h2
+  font-size: 1.2em
+  display: block
+
+  .list-item
+    border: solid 1px $offwhite
+    min-height: 90px
+    margin-bottom: 20px
+
+    ul 
+      margin: 0
+      display: block
+
+
+    .date,
+    .time,
+    .teams,
+    .live
+      padding: 10px
+      margin: 0px
+      min-height: 40px
+
+    .date
+      background: $offwhite
+
+    .live
+      color: #64ED7D
+      font-weight: 800
+
+
 
 
 
